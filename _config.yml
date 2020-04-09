@@ -1,7 +1,7 @@
 # Site
-title:              ¡Fuerza España!
+title:              ¡Salvemos vidas desde casa!
 bio:                ''
-description:        ""
+description:        "Esta iniciativa nace desde la reflexión y la perspectiva de que siempre podemos hacer algo para cambiar una situación que no nos gusta.  Además de brindar tu aplauso para todos los héroes que cada día siguen saliendo a la calle y salvando vidas.... tú desde casa también puedes ayudar activamente, convertirte en otro héroe y salvar vidas."
 locale:             en_US
 baseurl: "/iniciativa" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
