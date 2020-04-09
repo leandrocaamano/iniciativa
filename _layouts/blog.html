@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+  Jekyll integration by somiibo.com
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+    {% include head.html %}
+
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
+				</header>
+
+
+				<!-- Nav -->
+					<nav id="nav">
+
+            {% include nav.html %}
+						
+					</nav>
+
+				<!-- Main -->
+				<div id="main">
+
+          <article class="post featured">
+            <header class="major">
+              <h2><a href="#">Información Donaciones</a></h2>
+              <!-- <p>Algo acá?</p> -->
+		    <p>
+									<center>
+										<i class="fa fa-hand-o-right" style="font-size:24px"><a href="https://www2.cruzroja.es/-/lanzamos-el-plan-cruz-roja-responde-frente-al-covid-19"> CRUZ ROJA ESPAÑOLA</a></i>
+									</center>
+									<center>
+										<i class="fa fa-hand-o-right" style="font-size:24px"><a href="https://www.unicef.es/donacion-emergencia-coronavirus"> UNICEF</a></i>
+									</center>
+									<center>
+										<i class="fa fa-hand-o-right" style="font-size:24px"><a href="https://www.oxfamintermon.org/es/coronavirus-emergencia-global"> INTERMON OXFAM</a></i>
+									</center>
+									<center>
+										<i class="fa fa-hand-o-right" style="font-size:24px"><a href="https://www.medicosdelmundo.org/coronavirus"> MÉDICOS DEL MUNDO</a></i>
+									</center>
+								</p>
+            </header>
+
+          </article>
+					<!-- Post -->
+					<section class="posts">
+						{% for post in site.posts %}
+						{% assign mod3 = forloop.index | modulo: 3 %}
+							<article>
+								<header>
+									<span class="date">{{ post.date | date_to_string }}</span>
+									<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+								</header>
+								<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+								<p>{{ post.excerpt }}</p>
+								<ul class="actions">
+									<li><a href="{{ post.url | absolute_url }}" class="button">Ver info</a></li>
+								</ul>
+							</article>
+							{% if mod3 == 0 %}
+							<article>
+								<header>
+									<h2><a href="#">Sponsored</a></h2>
+								</header>
+
+							</article>
+							{% endif %}
+						{% endfor %}
+
+					</section>
+
+					</div>
+
+				<!-- Footer -->
+        {% include foot.html %}
+
+			</div>
+
+			<!-- Scripts -->
+			{% include scripts-main.html %}
+			{% include tracking.html %}
+
+	</body>
+</html>
