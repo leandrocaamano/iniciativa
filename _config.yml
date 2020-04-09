@@ -3,7 +3,7 @@ title:              ¡Fuerza España!
 bio:                ''
 description:        ""
 locale:             en_US
-baseurl: "/leandro" # the subpath of your site, e.g. /blog
+baseurl: "/iniciativa" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Comments
