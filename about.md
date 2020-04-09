@@ -4,7 +4,7 @@ title: Sobre mí
 description: Sobre mí
 sitemap:
     priority: 0.7
-    lastmod: 2017-11-02
+    lastmod: 2020-04-09
     changefreq: weekly
 ---
 ## Sobre mí
